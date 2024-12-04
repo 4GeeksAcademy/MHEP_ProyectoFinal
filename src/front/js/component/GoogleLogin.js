@@ -32,7 +32,7 @@ const Login = ({ onSignIn }) => {
       provider: 'google',
       options: {
         scopes: 'https://www.googleapis.com/auth/calendar',
-        redirectTo: 'https://effective-space-trout-vgvrqw54744fw95p-3000.app.github.dev/auth/callback',
+        redirectTo: 'https://solid-giggle-x9wpvx46q6g39q6j-3000.app.github.dev/auth/callback',
       },
     });
     if (error) {
