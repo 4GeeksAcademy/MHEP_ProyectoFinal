@@ -1,15 +1,13 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
-const Dotenv = require('dotenv-webpack');
+
 module.exports = merge(common, {
     mode: 'production',
     output: {
-        publicPath: '/'
+        publicPath: '/', // Ruta base
     },
     plugins: [
-        new Dotenv({
-            safe: true,
-            systemvars: true
-        })
-    ]
+        // No incluyas dotenv-webpack si no necesitas variables de entorno
+    ],
 });
+
